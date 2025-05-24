@@ -4,14 +4,59 @@
   <meta charset="UTF-8">
   <title>Giriş</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
   <h1>Giriş Yap</h1>
-  <form method="POST" action="/login">
-    <label>Öğrenci Mailim: <input type="email" name="email" required></label><br>
-    <label>Şifrem: <input type="password" name="password" required></label><br>
-    <button type="submit">Giriş</button>
+  <form id="jsForm">
+    <label>Öğrenci Mailim: <input type="email" id="jsEmail" required placeholder="b212100001@sakarya.edu.tr"></label><br>
+    <label>Şifrem: <input type="password" id="jsPassword" required placeholder="b212100001"></label><br>
+    <button type="button" onclick="jsLogin()">JS ile Giriş</button>
+    <span id="jsMessage"></span>
   </form>
+  <hr>
+  <div id="vueApp">
+    <form @submit.prevent="vueLogin">
+      <label>Öğrenci Mailim: <input type="email" v-model="email" required placeholder="b212100001@sakarya.edu.tr"></label><br>
+      <label>Şifrem: <input type="password" v-model="password" required placeholder="b212100001"></label><br>
+      <button type="submit">Vue.js ile Giriş</button>
+      <span>{{ message }}</span>
+    </form>
+  </div>
   <a href="index.html">Ana Sayfa</a>
+  <script>
+    // JS ile kontrol
+    function jsLogin() {
+      const email = document.getElementById('jsEmail').value;
+      const password = document.getElementById('jsPassword').value;
+      const message = document.getElementById('jsMessage');
+      if(email === "b212100001@sakarya.edu.tr" && password === "b212100001") {
+        message.textContent = "Hoşgeldiniz b212100001!";
+        message.style.color = "green";
+      } else {
+        message.textContent = "Hatalı giriş!";
+        message.style.color = "red";
+      }
+    }
+
+    // Vue.js ile kontrol
+    new Vue({
+      el: '#vueApp',
+      data: {
+        email: '',
+        password: '',
+        message: ''
+      },
+      methods: {
+        vueLogin() {
+          if(this.email === "b212100001@sakarya.edu.tr" && this.password === "b212100001") {
+            this.message = "Hoşgeldiniz b212100001!";
+          } else {
+            this.message = "Hatalı giriş!";
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
