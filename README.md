@@ -1,17 +1,18 @@
-# Kişisel Web Sitesi Projesi
+WebTeknolojiProje
+Projemin amacı: Kendimi, memleketimi ve memleketimin kültürel miraslarını tanıtmak. Bu bağlamda projem için izlemem gereken adımları şu şekilde planladım.
 
-Bu proje, Sakarya Üniversitesi Bilgisayar Mühendisliği dersi kapsamında hazırlanan kişisel web sitesi ödevidir. Projede HTML, CSS ve JavaScript kullanılarak kişisel bilgiler, memleket tanıtımı, kültürel miras, ilgi alanları, iletişim formu ve giriş (login) sayfası oluşturulmuştur.
+1-) HTML ve CSS kodlarını kullanarak giriş niteliğinde bir "Hakkımda" sayfası oluşturmalı ve bu sayfada kendimi tanıtan özelliklere yer vermeliyim.
 
-## Proje İçeriği
-- **Hakkımda:** Kişisel bilgiler, eğitim geçmişi ve hobiler
-- **Memleketim:** İstanbul hakkında bilgiler ve görseller
-- **Kültürel Miras:** Galata Kulesi ve tuttuğum takım (Beşiktaş JK)
-- **İlgi Alanlarım:** Sevdiğim filmler ve API ile veri çekme
-- **İletişim:** Form ile iletişim ve JS/framework ile doğrulama
-- **Giriş:** JS ve Vue.js ile kullanıcı doğrulama
+2-) HTML ve CSS kodlarını kullanarak eğitim bilgilerimi içeren CV niteliğinde bir özgeçmiş sayfası oluşturmalıyım.
 
-## Kullanılan Teknolojiler
-- HTML5 & CSS3
-- JavaScript (Vanilla ve Vue.js)
+3-) HTML ve CSS kodlarını kullanarak "Şehrim" isimli bir sayfa oluşturmalı ve bu sayfada şehrimin özelliklerini tanıtmalıyım ve bu sayfaya en az 4 resimden oluşan bir slider eklemeliyim.
 
-Proje herkese açık olarak paylaşılmıştır ve gelişmeler oldukça güncellenmeye devam edecektir. 
+4-) HTML ve CSS kodlarını kullanarak "Mirasımız" veya "Takımımız" isimli bir sayfa oluşturup şehrin kültüren miraslarını veya takımını tanıtan bir sayfa oluşturmalıyım.
+
+5-) "İlgi Alanlarım" isimli bir sayfa oluşturarak bu sayfaya internette bulduğum bir API servisinden veri alıp göstermeliyim.
+
+6-) PHP kodlarını kullanarak bir login sayfası oluşturmalıyım.
+
+7-) Form elemanlarını kullanarak bir iletişim sayfası oluşturmalıyım ve gönderilen form elemanlarını başka bir sayfada görüntülemeliyim.
+
+Projeyi sıraladığım adımlar şeklinde oluşturarak yüklemeyi planlıyorum.
